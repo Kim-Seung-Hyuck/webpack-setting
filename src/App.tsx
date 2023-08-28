@@ -1,10 +1,13 @@
 import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Blackjack from './pages/blackjack/Blackjack';
 
 export const App = () => {
   return (
-    <div>
-      <h4>react</h4>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Blackjack />} />
+      </Routes>
+    </BrowserRouter>
   );
 };

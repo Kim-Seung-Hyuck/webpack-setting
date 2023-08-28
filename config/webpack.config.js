@@ -12,10 +12,7 @@ module.exports = {
     open: true,
     // 데브 서버 시작시 브라우저 실행 옵션
     compress: true,
-    host: 'localhost',
     port: 3000,
-    // 개발기 우회
-    allowedHosts: ['all'],
     historyApiFallback: true,
     liveReload: true,
     client: {
@@ -41,7 +38,7 @@ module.exports = {
       },
       {
         test: /\.(c|sc)ss$/,
-        use: ['style-loader', 'css-loader', 'scss-loader'],
+        use: ['style-loader', 'cdss-loader', 'scss-loader'],
       },
       {
         test: /\.(png|jpg|gif|svg)$/, // 이미지 확장자 추가
@@ -50,7 +47,7 @@ module.exports = {
             loader: 'file-loader', // 파일 로더를 사용하여 이미지 처리
             options: {
               name: '[name].[ext]', // 파일 이름 유지
-              outputPath: 'images/', // 번들된 이미지 파일이 저장될 경로
+              outputPath: 'img/', // 번들된 이미지 파일이 저장될 경로
             },
           },
         ],
