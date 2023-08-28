@@ -65,7 +65,7 @@ module.exports = {
     new ReactRefreshWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', './src/public/index.dev.html'),
-      filename: '../index.html',
+      filename: path.resolve(__dirname, 'dist', 'index.html'),
       publicPath: '',
     }),
   ],
