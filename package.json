@@ -1,0 +1,45 @@
+{
+  "name": "webpack-setting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.config.js --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kim-Seung-Hyuck/webpack-setting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kim-Seung-Hyuck/webpack-setting/issues"
+  },
+  "homepage": "https://github.com/Kim-Seung-Hyuck/webpack-setting#readme",
+  "dependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-react": "^7.22.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "axios": "^1.4.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.14.0",
+    "react-router-dom": "^6.15.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
